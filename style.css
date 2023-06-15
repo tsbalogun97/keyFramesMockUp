@@ -273,15 +273,15 @@ body{
 
 @keyframes flash {
     from {
-        transform: rotateX(0deg)
+        opacity: 0;
     
     }
     to {
-        transform: rotateX(360deg)
+        opacity: 1;
     }
 }
 .flashing {
-    animation: flash 5s ease-in-out infinite;
+    animation: flash 3s ease-in-out infinite;
 }
 
 @keyframes roll {
@@ -297,4 +297,7 @@ body{
 .move {
 animation: roll 10s ease-in-out infinite;
 
+}
+.femalePlayer {
+    height: 150px;
 }
